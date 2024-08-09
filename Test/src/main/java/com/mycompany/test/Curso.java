@@ -26,7 +26,6 @@ public class Curso {
         this.alumnosAsignados = alumnosAsignados;
         
     }
-    }
 
     public String getNombre() {
         return nombre;
