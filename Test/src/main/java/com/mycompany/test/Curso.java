@@ -11,14 +11,21 @@ import java.util.List;
  */
 public class Curso {
 
-    private String nombre;
-    private int maxAlumnos;
-    private List<Alumno> alumnos;
+    private int id;
+    private String Titulo;
+    private int numMaxAlumnos;
+    private int creditos;
+    private Catedratico catedratico; 
+    private int alumnosAsignados;
 
-    public Curso(String nombre, int maxAlumnos) {
-        this.nombre = nombre;
-        this.maxAlumnos = maxAlumnos;
-        this.alumnos = new ArrayList<>();
+    public Curso(int id, String Titulo, int numMaxAlumnos, int creditos, int alumnosAsignados, Catedratico catedratico) {
+        this.Titulo = Titulo;
+        this.numMaxAlumnos = numMaxAlumnos;
+        this.creditos = creditos;
+        this.catedratico = catedratico;
+        this.alumnosAsignados = alumnosAsignados;
+        
+    }
     }
 
     public String getNombre() {
